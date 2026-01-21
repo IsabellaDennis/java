@@ -1,4 +1,5 @@
 // Write a function to find the nᵗʰ Fibonacci number.
+// Static Method
 
 import java.util.Scanner;
 

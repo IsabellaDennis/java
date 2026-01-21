@@ -1,4 +1,5 @@
 // Write a function that generates the multiplication table
+//Non Static Method
 
 import java.util.Scanner;
 

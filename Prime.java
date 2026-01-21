@@ -1,4 +1,5 @@
 // Write a function that checks whether a given number is prime or not
+//Non Static Method
 
 import java.util.Scanner;
 
