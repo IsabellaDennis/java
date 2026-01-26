@@ -97,3 +97,22 @@ public class StudentMain {
     }
 }
 
+
+
+// Enter number of students: 3
+// Enter RollNo Name Marks: 1 Anna 75
+// Enter RollNo Name Marks: 2 Bella 90
+// Enter RollNo Name Marks: 3 John 80
+
+// Rank List
+// RollNo Name Marks
+// 2  Bella  90
+// 3  John   80
+// 1  Anna   75
+
+// Total Students: 3
+
+// Comparison:
+// Bella has higher marks
+
+
