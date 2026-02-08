@@ -43,7 +43,7 @@ class Rectangle implements Shape {
     }
 }
 
-public class MenuProgram {
+public class Pg9_MenuProgram {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice;
