@@ -3,12 +3,12 @@
 // Create an object of CPU and print details of its processor and RAM.
 
 
-class CPU {
+class Pg3_CPU {
 
     int price;
 
     // Constructor
-    CPU(int price) {
+    Pg3_CPU(int price) {
         this.price = price;
     }
 
@@ -47,13 +47,13 @@ class CPU {
     // Main method
     public static void main(String[] args) {
 
-        CPU cpu = new CPU(45000);
+        Pg3_CPU cpu = new Pg3_CPU(45000);
         System.out.println("CPU Price : " + cpu.price);
 
-        CPU.Processor processor = cpu.new Processor(8, "Intel");
+        Pg3_CPU.Processor processor = cpu.new Processor(8, "Intel");
         processor.display();
 
-        CPU.RAM ram = new CPU.RAM(16, "Corsair");
+        Pg3_CPU.RAM ram = new Pg3_CPU.RAM(16, "Corsair");
         ram.display();
     }
 }

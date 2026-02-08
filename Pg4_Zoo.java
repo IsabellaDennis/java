@@ -3,7 +3,7 @@
 // Create a static nested class Contact with address and phone no.
 // Display details of zoo including its contact info and detailed information of different enclosures.
 
-class Zoo {
+class Pg4_Zoo {
 
     String name;
     String[] region;
@@ -38,7 +38,7 @@ class Zoo {
 
     public static void main(String[] args) {
 
-        Zoo zoo = new Zoo();
+        Pg4_Zoo zoo = new Pg4_Zoo();
         zoo.name = "City Zoo";
         zoo.region = new String[]{"Area-1", "Area-2"};
 
@@ -50,27 +50,27 @@ class Zoo {
         System.out.println();
 
         // Contact details
-        Zoo.Contact contact = new Zoo.Contact();
+        Pg4_Zoo.Contact contact = new Pg4_Zoo.Contact();
         contact.address = "MG Road";
         contact.phoneNo = "9876543210";
         contact.display();
 
         // Enclosure 1
-        Zoo.Enclosure e1 = zoo.new Enclosure();
+        Pg4_Zoo.Enclosure e1 = zoo.new Enclosure();
         e1.name = "Grassland";
         e1.type = "Outdoor";
         e1.animals = new String[]{"Lion", "Tiger", "Deer"};
         e1.display();
 
         // Enclosure 2
-        Zoo.Enclosure e2 = zoo.new Enclosure();
+        Pg4_Zoo.Enclosure e2 = zoo.new Enclosure();
         e2.name = "Fly Zone";
         e2.type = "Indoor";
         e2.animals = new String[]{"Parrot", "Eagle"};
         e2.display();
 
         // Enclosure 3
-        Zoo.Enclosure e3 = zoo.new Enclosure();
+        Pg4_Zoo.Enclosure e3 = zoo.new Enclosure();
         e3.name = "Aquatic";
         e3.type = "Indoor";
         e3.animals = new String[]{"Fish", "Turtle"};

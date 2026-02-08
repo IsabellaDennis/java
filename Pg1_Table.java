@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Table {
+public class Pg1_Table {
 
     public int table(int n) {
         for (int i = 1; i <= 10; i++) {
@@ -18,7 +18,7 @@ public class Table {
         System.out.print("Enter value: ");
         int n = sc.nextInt();
 
-        Table obj = new Table();
+        Pg1_Table obj = new Pg1_Table();
         obj.table(n);
 
         sc.close();

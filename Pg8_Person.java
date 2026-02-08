@@ -1,3 +1,11 @@
+// Create a class Person with data members – Name, Gender, Address, Age.
+// Create a class Employee that inherits from Person with data members –
+// Empid, Company_name, Qualification, Salary.
+// Create a class Teacher that inherits from Employee with data members –
+// TeacherId, Subject and Department.
+// Demonstrate using N Teachers.
+
+
 class Person {
     String name, gender, address;
     int age;
@@ -43,7 +51,7 @@ class Teacher extends Employee {
     }
 }
 
-public class pgm8Person {
+public class Pg8_Person {
     public static void main(String[] args) {
 
         Teacher t1 = new Teacher(
@@ -62,5 +70,19 @@ public class pgm8Person {
         t2.display();
     }
 }
+
+
+
+// Teacher ID: 1
+// Name: Abi
+// Subject: Java
+// Department: CS
+// Salary: 40000.0
+
+// Teacher ID: 2
+// Name: Anu
+// Subject: Maths
+// Department: Science
+// Salary: 35000.0
 
 

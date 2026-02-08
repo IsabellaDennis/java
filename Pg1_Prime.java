@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Prime {
+public class Pg1_Prime {
 
     public int checkPrime(int n) {
         if (n <= 1)
@@ -22,7 +22,7 @@ public class Prime {
         System.out.print("Enter value: ");
         int n = sc.nextInt();
 
-        Prime obj = new Prime();
+        Pg1_Prime obj = new Pg1_Prime();
         int result = obj.checkPrime(n);
 
         if (result == 1)

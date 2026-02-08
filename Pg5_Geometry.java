@@ -2,7 +2,7 @@
 // create Geometry class with methods to find area of a 
 // square(int), rectangle (int,int) and circle (double)
 
-class Geometry {
+class Pg5_Geometry {
 
     // Area of square
     void area(int side) {
@@ -21,7 +21,7 @@ class Geometry {
 
     public static void main(String[] args) {
 
-        Geometry g = new Geometry();
+        Pg5_Geometry g = new Pg5_Geometry();
 
         g.area(5);        // square
         g.area(10, 4);    // rectangle

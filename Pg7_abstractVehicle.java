@@ -1,3 +1,10 @@
+// Create a class Vehicle (Model, Company).
+// Create a class Car (No. of doors, Fuel Type) that inherits from Vehicle.
+// Create a class Electric (batteryCapacity) that inherits from Car.
+// Include the concepts of Abstract Base class, Dynamic Method Dispatch,
+// Constructor as well as method overriding.
+
+
 abstract class Vehicle {
     String model, company;
 
@@ -42,7 +49,7 @@ class Electric extends Car {
     }
 }
 
-public class abstractVehicle {
+public class Pg7_abstractVehicle {
 
     public static void main(String args[]) {
 
@@ -53,3 +60,11 @@ public class abstractVehicle {
         v.show();
     }
 }
+
+
+
+// Model: Nexon
+// Company: Tata
+// Doors: 4
+// Fuel Type: Electric
+// Battery Capacity: 40 kWh

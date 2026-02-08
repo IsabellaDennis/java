@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Fibonacci {
+public class Pg1_Fibonacci {
 
     public static int fib(int n) {
         if (n == 0)

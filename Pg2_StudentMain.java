@@ -49,7 +49,7 @@ class Student {
     }
 }
 
-public class StudentMain {
+public class Pg2_StudentMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
