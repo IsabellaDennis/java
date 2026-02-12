@@ -2,6 +2,7 @@
 // that implements interfaces Printable ,Computable and Drawable
 
 
+package pg11;
 
 interface Printable {
     void display();
@@ -57,18 +58,18 @@ class Sphere implements Printable, Computable, Drawable {
     }
 
     public void display() {
-        System.out.println("\nSphere Details:");
+        System.out.println("Sphere Details:");
         System.out.println("Radius : " + radius);
         System.out.println("Volume : " + volume);
     }
 
     public void draw() {
-        System.out.println("Drawing Sphere");
+        System.out.println("\nDrawing Sphere");
     }
 }
 
 // Main class
-public class Pg11_InterfaceDemo {
+public class Pg11_Interface {
     public static void main(String[] args) {
 
         Rectangle r = new Rectangle(5, 4);

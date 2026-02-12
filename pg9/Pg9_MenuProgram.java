@@ -1,7 +1,7 @@
 // Create an interface with functions area() and perimeter().
 // Create two classes Circle and Rectangle which implement the above interface.
 // Create a menu-driven program to find the area and perimeter of various objects.
-
+package pg9;
 
 import java.util.Scanner;
 

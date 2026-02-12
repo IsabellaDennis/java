@@ -3,7 +3,7 @@
 // printable with a method declaration to display particulars of the object.
 // create a class Cuboid(height) that inherits from Rectangle and implement interfaces
 
-
+package pg10;
 
 interface Measurable {
     double volume();
