@@ -31,7 +31,7 @@ class Cuboid extends Rectangle implements Measurable, Printable {
 
     Cuboid(double l, double w, double h) {
         super(l, w);
-        height = h;
+        height = h; //if it is same variable and parameter use 'this'
     }
 
     // Implement volume method
