@@ -1,3 +1,5 @@
+//Demonstrate Reader-writer problem where the writer writes before the reader reads
+
 class Reader implements Runnable {
     static final Object lock = Pg23.lock;
     static boolean writeDone = false;
@@ -60,3 +62,16 @@ public class Pg23_RW {
         writerThread.start(); // writer executes first
     }
 }
+
+
+
+
+//output
+// Writer is writing:
+// Write A
+// Write B
+// Write C
+// Reader is reading:
+// Read A
+// Read B
+// Read C
