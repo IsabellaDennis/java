@@ -1,7 +1,7 @@
-//Demonstrate Reader-writer problem where the writer writes before the reader reads
+// Demonstrate Reader-writer problem where the writer writes before the reader reads
 
 class Reader implements Runnable {
-    static final Object lock = Pg23.lock;
+    static final Object lock = Pg23_RW.lock; // FIXED
     static boolean writeDone = false;
 
     @Override
@@ -9,7 +9,7 @@ class Reader implements Runnable {
         synchronized (lock) {
             try {
                 while (!writeDone) {
-                    lock.wait(); // wait until writer finishes
+                    lock.wait();
                 }
 
                 System.out.println("Reader is reading:");
@@ -27,7 +27,7 @@ class Reader implements Runnable {
 }
 
 class Writer implements Runnable {
-    static final Object lock = Pg23.lock;
+    static final Object lock = Pg23_RW.lock; // FIXED
 
     @Override
     public void run() {
@@ -40,8 +40,8 @@ class Writer implements Runnable {
                 Thread.sleep(500);
                 System.out.println("Write C");
 
-                Reader.writeDone = true; // signal completion
-                lock.notifyAll(); // wake up reader
+                Reader.writeDone = true;
+                lock.notifyAll();
 
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
@@ -58,20 +58,20 @@ public class Pg23_RW {
         Thread readerThread = new Thread(new Reader());
         Thread writerThread = new Thread(new Writer());
 
-        readerThread.start(); // reader starts first (but waits)
-        writerThread.start(); // writer executes first
+        readerThread.start(); // waits
+        writerThread.start(); // executes first
     }
 }
 
+/*
+Output:
 
-
-
-//output
-// Writer is writing:
-// Write A
-// Write B
-// Write C
-// Reader is reading:
-// Read A
-// Read B
-// Read C
+Writer is writing:
+Write A
+Write B
+Write C
+Reader is reading:
+Read A
+Read B
+Read C
+*/
