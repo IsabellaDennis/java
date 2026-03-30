@@ -1,3 +1,14 @@
+// Create a table Book (BookId, Title, Author, Price) in Oracle database.
+// Write a menu-driven Java program using JDBC to perform the following operations:
+
+// Insert book details
+// Display all books
+// Display book based on title
+// Display all books of a given author
+// Update price of a given book
+// Delete a given book
+
+    
 import java.sql.*;
 import java.util.Scanner;
 
@@ -171,3 +182,54 @@ public class Pg28_jdbc {
         sc.close();
     }
 }
+
+// Table created successfully!
+
+// 1.Insert Book
+// 2.Display All Books
+// 3.Search by Title
+// 4.Search by Author
+// 5.Update Price
+// 6.Delete Book
+// 7.Exit
+// Enter choice: 1
+
+// Book ID: 101
+// Title: Java Basics
+// Author: James
+// Price: 500
+// Book inserted!
+
+// Enter choice: 1
+
+// Book ID: 102
+// Title: DBMS
+// Author: Korth
+// Price: 650
+// Book inserted!
+
+// Enter choice: 2
+
+// 101   Java Basics   James   500.0
+// 102   DBMS          Korth   650.0
+
+// Enter choice: 3
+// Enter title: Java Basics
+
+// 101   Java Basics   James   500.0
+
+// Enter choice: 5
+// Enter Book ID: 101
+// New Price: 550
+// Price updated!
+
+// Enter choice: 6
+// Enter Book ID: 102
+// Book deleted!
+
+// Enter choice: 2
+
+// 101   Java Basics   James   550.0
+
+// Enter choice: 7
+
